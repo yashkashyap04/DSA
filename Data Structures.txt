@@ -1,0 +1,7 @@
+Array ✔️
+Linked List ✔️
+Stack ✔️
+Queue ✔️
+Binary Search Tree ✔️
+Graph ✔️
+Hashmap ✔️
