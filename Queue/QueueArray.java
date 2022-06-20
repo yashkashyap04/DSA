@@ -6,20 +6,21 @@ public class QueueArray {
     private int array[];
     private int size;
 
-    public QueueArray (int size) {
-        this.size = size;
+    public QueueArray (int max) {
+        this.size = 0;
         front = -1; rear = -1;
-        array = new int[size];
+        array = new int[max];
     }
 
     public void enqueue (int value) {
-        if (rear == size - 1) {
+        if (rear == array.length - 1) {
             System.out.println("Overflow!");
         }
         else {
             array[++rear] = value;
             if (rear == 0)
                 front = rear;
+            size++;
         }
     }
 
@@ -30,6 +31,7 @@ public class QueueArray {
         }
         else {
             int value = array[front++];
+            size--;
             if (front > rear) {
                 rear = -1;
                 front = -1;
@@ -57,5 +59,9 @@ public class QueueArray {
         else {
             System.out.println("Empty Queue.");
         }
+    }
+
+    public int getSize() {
+        return size;
     }
 }
