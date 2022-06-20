@@ -2,10 +2,10 @@ package Graphs;
 
 import java.util.Scanner;
 
-public class UseDirectedGraph {
+public class UseUndirectedGraph {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DirectedGraph graph = new DirectedGraph();
+        UndirectedGraph graph = new UndirectedGraph();
         int choice;
 
         do {

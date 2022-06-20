@@ -2,19 +2,19 @@ package Graphs;
 
 public class Edge {
     private int source;
-    private int neighbour;
+    private int destination;
     private int weight;
 
-    public Edge (int s, int n, int w) {
-        source = s; neighbour = n; weight = w;
+    public Edge (int s, int d, int w) {
+        source = s; destination = d; weight = w;
     }
 
     public int getSource() {
         return source;
     }
 
-    public int getNeighbour() {
-        return neighbour;
+    public int getDestination() {
+        return destination;
     }
 
     public int getWeight() {

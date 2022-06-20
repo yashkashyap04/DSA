@@ -45,11 +45,29 @@ public class QueueSLL {
         }
     }
 
+    public boolean contains (int value) {
+        Node curr = front;
+        while (curr != null) {
+            if (curr.getData() == value)
+                return true;
+            curr = curr.getNext();
+        }
+        return false;
+    }
+
     public void displayQueue () {
         list.displayList();
     }
 
     public int getSize() {
         return size;
+    }
+
+    public Node getFront() {
+        return front;
+    }
+
+    public Node getRear() {
+        return rear;
     }
 }
