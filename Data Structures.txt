@@ -2,6 +2,6 @@ Array ✔️
 Linked List ✔️
 Stack ✔️
 Queue ✔️
-Binary Search Tree ✔️
+Binary Tree ✔️
 Graph ✔️
 Hashmap ✔️
